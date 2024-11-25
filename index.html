@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/personagens.css">
+  <link rel="stylesheet" href="css/episodio.css">
+  <link rel="stylesheet" href="css/contatos.css">
+  <title>Site Anime</title>
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <nav class="nav">
+    <a class="logo">
+      <img src="img/YuYuHakushoNavBAR.png" alt="">
+    </a>
+    <button class="hamburger"></button>
+    <ul class="nav-list">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#personagens">Personagens</a></li>
+      <li><a href="#episodio">Episódios favoritos</a></li>
+      <li><a href="#contatos">Contatos</a></li>
+      <button id='theme-btn'>☀</button>
+    </ul>
+  </nav>
+
+
+  <!-- Container para a primeira dobra: Início -->
+  <section id="inicio">
+    <div class="containerinicio">
+
+      <!-- Logo, sinopse e botão para assistir ao anime no YouTube -->
+      <div class="txtinicio">
+        <img src="img/YuYuHakushoLogo.png" alt="">
+        <h1>Yu Yu Hakusho acompanha Yusuke Urameshi,
+          um garoto problemático que morre ao salvar uma criança, mas ganha uma nova chance como Detetive Espiritual.
+          Agora, ele enfrenta forças sobrenaturais, desvendando mistérios entre o mundo humano e o espiritual.</h1>
+          <a href="https://youtu.be/PMjN72PmLWw?si=TvsdqgQtsZJ2AVJz" target="_blank">
+            <p>Assista no YouTube</p>
+          </a>
+      </div>
+
+      <!-- Imagem inicial -->
+      <div class="inicio">
+        <div class="imginicio"><img src="img/Personagens.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Container para a segunda dobra: Personagens -->
+  <section id="personagens">
+    <div class="containerpersonagem">
+
+      <!-- Título Personagens -->
+      <div class="txtpersonagem">
+        <h1>GALERIA DE PERSONAGENS</h1>
+      </div>
+
+      <!-- Card do primeiro personagem: Kurama. Com botão para navegar para sua página de detalhamento -->
+      <div class="cardpersonagem">
+        <div class="cardum">
+          <h1>Yoko Kurama</h1>
+          <div class="imgP"><img src="img/cardkurama.png" alt=""></div>
+          <div class="txtcardum">
+            <p>Kurama é um estrategista habilidoso que combina inteligência com o uso de plantas demoníacas letais, como
+              o "Chicote de Rosa". Antigo espírito de raposa, ele atua como o membro mais calculista e técnico do grupo.
+            </p>
+            <button class="expandButton" onclick="location.href='html/detalheskurama.html'">
+              Ver Mais <img src="img/Expandiricon.png" alt="Expandir">
+            </button>
+          </div>
+        </div>
+
+        <!-- Card do segundo personagem: Yusuke. Com botão para navegar para sua página de detalhamento -->
+        <div class="carddois">
+          <h1>Urameshi Yusuke</h1>
+          <div class="imgP"><img src="img/cardyusuke.png" alt=""></div>
+          <div class="txtcarddois">
+            <p>Yusuke é um detetive espiritual que canaliza sua energia em ataques devastadores. Ele lidera a equipe em
+              combates cruciais, equilibrando estratégia e poder bruto em batalhas contra inimigos sobrenaturais.</p>
+            <button class="expandButton" onclick="location.href='html/detalhesyusuke.html'">
+              Ver Mais<img src="img/Expandiricon.png" alt="Expandir">
+            </button>
+          </div>
+        </div>
+
+        <!-- Card do terceiro personagem: Hiei. Com botão para navegar para sua página de detalhamento -->
+        <div class="cardtres">
+          <h1>Jaganshi Hiei</h1>
+          <div class="imgP"><img src="img/cardhiei.png" alt=""></div>
+          <div class="txtcardtres">
+            <p>Hiei é um híbrido de demônio do fogo e gelo, conhecido por sua velocidade incrível, habilidades com a
+              espada e o temível "Dragão Negro das Chamas".</p>
+            <button class="expandButton" onclick="location.href='html/detalheshiei.html'">
+              Ver Mais <img src="img/Expandiricon.png" alt="Expandir">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Container para a terceira dobra: Episodios -->
+  <section id="episodio">
+
+    <!-- Título Episodios -->
+    <div class="txtepisodios"><h1>EPISÓDIOS FAVORITOS</h1></div>
+
+    <div class="containerepisodio">
+
+      <!-- Primeiro episodio com número, título, sinopse, thumbnail e popup de video do YouTub -->
+        <div class="epum">
+            <div class="txtepum">
+                <h2>Episódio 21</h2>
+                <h1>O Incrível Suzako</h1>
+                <p>Yusuke e seus amigos enfrentam um novo e poderoso adversário, Suzaku, um dos demônios mais temíveis do torneio das trevas.</p>
+            </div>
+            <div class="popupum video-container">
+                <img src="img/thumbnail21.png" alt="Episódio 21" class="thumbnail">
+                <button class="open-popup" data-video="https://www.youtube.com/embed/UX8-_cg0cVE?si=OfsswjB91mT1UHqM">▶</button>
+            </div>
+        </div>
+
+        <!-- Segundo episodio com número, título, sinopse, thumbnail e popup de video do YouTub -->
+        <div class="epdois">
+            <div class="popupdois video-container">
+                <img src="img/thumbnail87.png" alt="Episódio 2" class="thumbnail">
+                <button class="open-popup" data-video="https://www.youtube.com/embed/YPY1thML9TI?si=soIi_phrHH2384pi">▶</button>
+            </div>
+            <div class="txtepdois">
+                <h2>Episódio 87</h2>
+                <h1>Koenma e Seu Golpe Secreto Mafuukan</h1>
+                <p>Yusuke e Koenma enfrentam a crescente ameaça de Sensui e seus outros alter egos. Durante o confronto, Shinobu, a personalidade dominante de Sensui, assume o controle de seu corpo, tornando a luta ainda mais imprevisível.</p>
+            </div>
+        </div>
+
+        <!-- Terceiro episodio com número, título, sinopse, thumbnail e popup de video do YouTub -->
+        <div class="eptres">
+            <div class="txteptres">
+                <h2>Episódio 91</h2>
+                <h1>O Patrulhamento</h1>
+                <p>A Força de Defesa Espiritual é enviada para conter uma brecha entre os mundos, com a missão de lidar com uma ameaça crescente. Enquanto isso, Yusuke começa a entender mais sobre sua verdadeira natureza.</p>
+            </div>
+            <div class="popuptres video-container">
+                <img src="img/thumbnail91.png" alt="Episódio 3" class="thumbnail">
+                <button class="open-popup" data-video="https://www.youtube.com/embed/eHn80fj1xw4?si=xiHHlwKR_b7PmiEj">▶</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Container para a quarta dobra: Contatos -->
+  <section id="contatos">
+    <div class="containercontatos">
+      <div class="formulario" id="formulario">
+
+        <!-- Título Contatos -->
+        <h1>Formulário</h1>
+
+        <!-- Formulário -->
+        <div class="formulario_main">
+          <form action="#" id="formContato">
+            <div class="input">
+              <p>Nome</p>
+              <input type="text" id="nome" placeholder="seu nome">
+            </div>
+
+            <div class="input">
+              <p>Seu melhor email</p>
+              <input type="email" id="email" placeholder="seu email">
+            </div>
+
+            <div class="input">
+              <p>Deixe uma mensagem</p>
+              <input type="text" id="mensagem" placeholder="sua mensagem">
+            </div>
+
+            <a href="#" class="formulario_btn" id="submitBtn">Enviar</a>
+          </form>
+        </div>
+
+        <!-- Mensagem de Feedback -->
+        <div id="feedbackMessage" class="feedback"></div>
+  </section>
+
+<p>Desenvolvido por Raquiel Ribeiro Alexandre</p>
+
+  <script defer src="js/navbar.js"></script>
+  <script defer src="js/episodio.js"></script>
+  <script defer src="js/contatos.js"></script>
+</body>
+
+</html>

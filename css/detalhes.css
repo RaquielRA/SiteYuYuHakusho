@@ -1,0 +1,401 @@
+/*botao para fechar*/
+
+.fechar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    transform: translateY(30px) translateX(-14px);
+    transition: transform 1.0s;
+    position: fixed;
+    z-index: 1001;
+}
+
+.fechar .fecharButton {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.fechar button {
+    border: none;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.fechar .fecharButton:hover {
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+/* imagem de fundo principal */
+.detalhesimg {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.detalhesimg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*container abrigando classes de texto e navegação entre as classes*/
+.containerdetalhes {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    width: 100vw;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+/*navegação entre as classes*/
+.navdet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+}
+
+.navdet button {
+    transition: opacity 0.3s;
+    opacity: 0.3;
+    border: none;
+    background: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.5vw;
+}
+
+.navdet button.selected {
+    opacity: 1;
+}
+
+.navdet button:hover {
+    opacity: 0.9;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+/* grid para organizar as classes de texto */
+.gridtxt {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.detalhestxt {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
+    width: 35vw;
+    height: 85vh;
+    align-items: center;
+    justify-items: center;
+    background-image: linear-gradient(to right, rgba(22, 22, 22, 0.350), rgba(63, 62, 62, 0.350));
+}
+
+
+.infdet {
+    width: 100%;
+    height: 580px;
+    align-items: center;
+    justify-items: center;
+}
+
+.infdet p {
+    font-size: 20px;
+    color: #c3c3c3;
+}
+
+
+/*configurações especificas das classes*/
+.caracteristicas {
+    width: 100%;
+    height: 100%;
+}
+
+.poderes {
+    width: 100%;
+    height: 100%;
+}
+
+.historia {
+    width: 100%;
+    height: 100%;
+}
+
+.transformacoes {
+    width: 100%;
+    height: 100%;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6 {
+    width: 30vw;
+    height: 88px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7 {
+    width: 30vw;
+    height: 74px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caracteristicas p {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+.poderes p {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+
+.historia p {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    padding: 70px 30px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.h {
+    width: 30vw;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t {
+    width: 30vw;
+    height: 570px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t img {
+    width: 26vw;
+    padding: 15px 0px 2vw 2vw;
+}
+
+.t h1 {
+    color: #f1f1f1;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.t p {
+    font-size: 15px;
+    text-align: justify;
+    padding: 13px;
+}
+
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .containerdetalhes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+
+    .detalhestxt {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 9fr;
+        width: 80%;
+        height: 95%;
+        align-items: center;
+        justify-items: center;
+        background-image: linear-gradient(to right, rgba(22, 22, 22, 0.350), rgba(63, 62, 62, 0.350));
+    }
+
+    .navdet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+    }
+
+    .navdet button {
+        font-size: 3vw;
+    }
+
+    .infdet {
+        width: 95%;
+        height: 90%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .infdet p {
+        font-size: 18px;
+    }
+
+    .h p {
+        font-size: 22px;
+    }
+
+    .t h1 {
+        font-size: 22px;
+    }
+
+    .c1,
+    .c2,
+    .c3,
+    .c4,
+    .c5,
+    .c6 {
+        width: 100%;
+        height: 12vw;
+    }
+
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7 {
+        width: 100%;
+        height: 10vw;
+    }
+
+    .h {
+        width: 100%;
+        height: 100%;
+    }
+
+    .t {
+        width: 100%;
+        height: 100%;
+    }
+
+    .t img {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 870px) {
+    .infdet p {
+        font-size: 17px;
+    }
+
+    .h p {
+        font-size: 20px;
+    }
+
+    .t h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .infdet p {
+        font-size: 15px;
+    }
+
+    .h p {
+        font-size: 18px;
+    }
+
+    .t h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 570px) {
+    .infdet p {
+        font-size: 12px;
+    }
+
+    .h p {
+        font-size: 16px;
+    }
+
+    .t h1 {
+        font-size: 16px;
+    }
+
+    .t p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .infdet p {
+        font-size: 10px;
+    }
+
+    .h p {
+        font-size: 14px;
+    }
+
+    .t h1 {
+        font-size: 16px;
+    }
+
+    .t p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .infdet p {
+        font-size: 8px;
+    }
+
+    .h p {
+        font-size: 13px;
+    }
+
+    .t h1 {
+        font-size: 15px;
+    }
+
+    .t p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 412px) {
+    .infdet p {
+        transform: translateY(-7px);
+    }
+}
